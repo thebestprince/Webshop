@@ -15,9 +15,12 @@
       <div>
         <button mat-button [matMenuTriggerFor]="menu">
             Show {{ itemsShowCount }}
+            <mat-icon>expand_more</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
-
+          <button (click)="onItemsUpdated(12)" mat-menu-item>12</button>
+          <button (click)="onItemsUpdated(24)" mat-menu-item>24</button>
+          <button (click)="onItemsUpdated(36)" mat-menu-item>36</button>
         </mat-menu>
       </div>
 
